@@ -30,7 +30,7 @@ public class Delivery {
     @PostPersist
     private void callProductApi() {
 
-        // CI/CD TEST를 위해 주석추가 
+        // CI/CD TEST를 위해 주석추가  
         
         // 1. 상품 서비스에 수량을 직접 변경하여 JPA call
         RestTemplate restTemplate = Application.applicationContext.getBean(RestTemplate.class);
